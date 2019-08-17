@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=CellFilling
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/hoarfrost/Documents/Cell"
-ProjectPath            := "/home/hoarfrost/Documents/Cell/CellFilling"
+WorkspacePath          := "/home/hoarfrost/Projects/CrystalFrost/Combinatorics/Cell"
+ProjectPath            := "/home/hoarfrost/Projects/CrystalFrost/Combinatorics/Cell/CellFilling"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/hoarfrost/Documents/Cell/CellFilling/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/hoarfrost/Projects/CrystalFrost/Combinatorics/Cell/CellFilling/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
@@ -100,7 +100,7 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/Filler.cpp$(ObjectSuffix): Filler.cpp $(IntermediateDirectory)/Filler.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/hoarfrost/Documents/Cell/CellFilling/Filler.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Filler.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/hoarfrost/Projects/CrystalFrost/Combinatorics/Cell/CellFilling/Filler.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Filler.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Filler.cpp$(DependSuffix): Filler.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Filler.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Filler.cpp$(DependSuffix) -MM "Filler.cpp"
 

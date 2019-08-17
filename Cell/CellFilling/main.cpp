@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    Filler filler("/home/hoarfrost/Documents/Cell/CellFilling/route.txt", 1);
+    Filler filler("/home/hoarfrost/Projects/CrystalFrost/Combinatorics/Cell/CellFilling/route.txt", 1);
     
     filler.Start();
     
