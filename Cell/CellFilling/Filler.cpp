@@ -29,6 +29,8 @@ Filler::Filler(std::string routeFileName, unsigned int isFixedFirstRow)
             }
         }
         
+        routeFile.close();
+        
         _isInitialized = Yes;
     }
 }
